@@ -1,11 +1,11 @@
 {
   "orders": [
     {
-      "tjmHt": 500,
+      "tjmHt": 506,
       "nbJours": 1,
       "tva": 20,
       "state": "OPTION",
-      "typePresta": "Formation",
+      "typePresta": "Formation1",
       "client": "nemesys",
       "comment": "fssdgh",
       "id": 3
@@ -34,7 +34,7 @@
       "tjmHt": 600,
       "nbJours": 2,
       "tva": 20,
-      "state": "CANCELED",
+      "state": "CONFIRMED",
       "typePresta": "Coaching",
       "client": "Capgemini",
       "comment": "merci cap",
@@ -44,8 +44,8 @@
       "tjmHt": 700,
       "nbJours": 1,
       "tva": 20,
-      "state": "CONFIRMED",
-      "typePresta": "formation",
+      "state": "OPTION",
+      "typePresta": "formationJohan",
       "client": "nemesys",
       "comment": "un joli commentaire",
       "id": 7
@@ -84,10 +84,10 @@
       "tjmHt": 1200,
       "nbJours": 1,
       "tva": 20,
-      "state": "OPTION",
-      "typePresta": null,
-      "client": null,
-      "comment": null,
+      "state": "CONFIRMED",
+      "typePresta": "sdfsdf",
+      "client": "sdfsdf",
+      "comment": "dsfdfdf",
       "id": 11
     },
     {

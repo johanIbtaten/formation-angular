@@ -35,16 +35,27 @@ export class OrdersService {
   }
   // upadate item in collection
   public update(item: Order): Observable<Order> {
-    return this.http.put<Order>(`${this.urlApi}/orders/${item.id}`, item);
+    return this.http.put<Order>(`${this.urlApi}/orders/${item.id}`, item).pipe(
+      catchError(this.handleError)
+    );
   }
 
   // add item in collection
   public add(item: Order): Observable<Order> {
-    return this.http.post<Order>(`${this.urlApi}/orders`, item);
+    return this.http.post<Order>(`${this.urlApi}/orders`, item).pipe(
+      catchError(this.handleError)
+    );
   }
 
   // delete item in collection
+
   // get item by id in collection
+  public getItemById(id: string): Observable<Order> {
+    return this.http.get<Order>(`${this.urlApi}/orders/${id}`).pipe(
+      catchError(this.handleError)
+    );
+  }
+
   // gestion http errors
   private handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-icon-delete',
@@ -7,7 +7,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./icon-abstract.component.scss']
 })
 export class IconDeleteComponent implements OnInit {
-  public myIcon = faTimes;
+  public myIcon = faTrashAlt;
 
   constructor() { }
 
